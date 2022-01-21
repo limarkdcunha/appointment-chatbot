@@ -6,7 +6,8 @@ const myStyle = {
 
 const App = () => {
   return (
-    <div className="App" style={myStyle}>
+    <div className="App">
+      <h1>Welcome to Appointment Booking Chatbot</h1>
       <SimpleForm />
     </div>
   );

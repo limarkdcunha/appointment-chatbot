@@ -17,7 +17,7 @@ const Appointments = (props) => {
       .catch(function(error) {
         console.log(error);
       });
-  },[]);
+  }, [doctor.value]);
 
   return (
     <div>

@@ -20,7 +20,7 @@ const BookAppointment = (props) => {
       .catch(function(error) {
         console.log(error);
       });
-  }, []);
+  }, [doctor.value]);
 
   return (
     <div>

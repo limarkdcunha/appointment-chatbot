@@ -14,12 +14,7 @@ const Successful = ({ timeSlots, appointment, doctor, firstname, lastname }) => 
       .catch(function(error) {
         console.log(error);
       });
-    //   {
-    //     "patientName":"Larren",
-    //     "doctorName":"Dr Patil",
-    //     "timing":"9:30-10:00"
 
-    // }
     axios
       .post(`${baseURL}/appointment/`, { patientName: `${firstname.value} ${lastname.value}`, doctorName: doctor.value, timing: appointment.value })
       .then((res) => {
@@ -32,7 +27,8 @@ const Successful = ({ timeSlots, appointment, doctor, firstname, lastname }) => 
 
   return (
     <div>
-      Appointment Booking Successful <br />
+      Appointment Booking Successful
+      <br />
       Name:{`${firstname.value} ${lastname.value}`}
       <br />
       Doctor:{doctor.value}
